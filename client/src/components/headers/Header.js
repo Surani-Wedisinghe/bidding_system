@@ -21,7 +21,8 @@ function Header() {
 
        <ul>
            <li><Link to="/">Properties</Link></li>
-           <li><Link to="/login">Login ✥ Register</Link></li>
+           <li><Link to="/login">Login </Link></li>
+           <li><Link to="/register"> Register</Link></li>
 
            <li>
                <img src={Close} alt="" width="30" className="menu" />

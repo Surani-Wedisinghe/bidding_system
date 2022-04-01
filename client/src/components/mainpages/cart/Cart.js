@@ -4,9 +4,9 @@ function Cart() {
   return (
     <div>
         Cart Components 
-         hi
+         
     </div>
   )
 }
 
-export default Cart
+export default Cart 
