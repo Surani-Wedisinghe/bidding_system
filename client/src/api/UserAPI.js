@@ -1,11 +1,12 @@
-import React, {useState, useEffect} from 'react'
+import {useState, useEffect} from 'react'
 import axios from 'axios'
 
 function UserAPI(token) {
     const [isLogged, setIsLogged] = useState(false)
     const [isAdmin, setIsAdmin] = useState(false)
     const [cart, setCart] = useState([])
-
+    const [history, setHistory] = useState([])
+   
     useEffect(() =>{
         if(token){
             const getUser = async () =>{
@@ -27,6 +28,8 @@ function UserAPI(token) {
             getUser()   
         }
     },[token])
+
+   
 
     const addCart = async (product) => {
         if(!isLogged) return alert("Please login to continue bidding")
@@ -53,7 +56,9 @@ function UserAPI(token) {
         isLogged: [isLogged, setIsLogged],
         isAdmin: [isAdmin, setIsAdmin],
         cart: [cart, setCart],
-        addCart: addCart
+        addCart: addCart,
+        history: [history, setHistory],
+       
   }
 }
 

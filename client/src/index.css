@@ -47,3 +47,12 @@ button{
 
 /*--------------------Cart---------------------*/
 @import url("./components/mainpages/cart/cart.css");
+
+/*-----------------------history----------------*/
+@import url("./components/mainpages/history/history.css");
+
+/*-----------------------Categories--------------------*/
+@import url("./components/mainpages/categories/categories.css");
+
+/*----------------------Create Properties-----------------*/
+@import url("./components/mainpages/createProduct/createProduct.css");

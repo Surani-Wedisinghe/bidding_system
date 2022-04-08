@@ -30,3 +30,8 @@
 .total h3{
     color: crimson;
 }
+
+  input[type='number']{
+    padding-left:20px;
+    text-align:left;
+  }
